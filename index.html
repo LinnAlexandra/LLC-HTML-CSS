@@ -61,15 +61,24 @@
         <h1>Introduction to HTML &amp; CSS</h1>
       </div>
       <div class="instructor_holder">
-        <h2>Your instructor today</h2>
-        <div>
-          <img src="assets/pearl_avatar.png" width="72" height="72" alt="pearl chen" />
-          <h4>Pearl Chen</h4>
-          pearl [at] karma-laboratory.com
+        <h2 class="centered">Your instructors today</h2>
+	<div>
+          <img src="assets/greg_avatar.png" width="72" height="72" alt="greg sullivan" />
+          <h4>Greg Sullivan &mdash; HTML</h4>
+          greg [at] swivelbase.com
           <br />
-          <a href="http://klab.ca/&plus;" target="_blank">klab.ca/+</a>
+          <a href="http://swivelbase.com" target="_blank">swivelbase.com</a>
           //
-          <a href="http://twitter.com/@pearlchen" target="_blank">@pearlchen</a>
+          <a href="http://twitter.com/" target="_blank"></a>
+        </div>
+        <div>
+          <img src="assets/linn_avatar.png" width="72" height="72" alt="linn &oslash;yen farley" />
+          <h4>Linn &Oslash;yen Farley &mdash; CSS</h4>
+          linn [at] drollic.net
+          <br />
+          <a href="http://drollic.net" target="_blank">drollic.net</a>
+          //
+          <a href="http://twitter.com/Linndelicate" target="_blank">@Linndelicate</a>
         </div>
         
         <br  clear="left" />
@@ -234,7 +243,7 @@
         <li>
           Avoid <code>s p a c e s</code> in your file name. Use underscores instead.<br />
           <span class="sidenote"><code>business_hours.html</code> instead of <code>business hours.html</code><br />
-            (The browswer will interpret it as <code>business%20hours.html</code>)</span>
+            (The browser will interpret it as <code>business%20hours.html</code>)</span>
         </li>
         <li>
           For the same reason, avoid symbols like <code># &amp; *</code> in your file name.
@@ -932,7 +941,7 @@
 
 <h1>Social Media</h1>
 <p>Follow me on 
-  <a href="http://twitter.com/@pearlchen" target="_blank">Twitter</a>!
+  <a href="http://twitter.com/Linndelicate" target="_blank">Twitter</a>!
 </p>
 </textarea>
 <script type='coder-solution'><h1 style="background-color: black; color: white;">Welcome!</h1>
@@ -940,7 +949,7 @@
 
 <h1 style="background-color: black; color: white;">Social Media</h1>
 <p style="font-size: 18px;">Follow me on 
-  <a href="http://twitter.com/@pearlchen" target="_blank"
+  <a href="http://twitter.com/Linndelicate" target="_blank"
   style="color: red;">Twitter</a>!
 </p>
 </script>
@@ -959,7 +968,7 @@
 
 <h1>Social Media</h1>
 <p>Follow me on 
-  <a href="http://twitter.com/@pearlchen" target="_blank">Twitter</a>!
+  <a href="http://twitter.com/Linndelicate" target="_blank">Twitter</a>!
 </p>
 </textarea>
 <script type='coder-solution'>
@@ -968,12 +977,12 @@
 
 <h1>Social Media</h1>
 <p>Follow me on 
-  <a href="http://twitter.com/@pearlchen" target="_blank">Twitter</a>!
+  <a href="http://twitter.com/Linndelicate" target="_blank">Twitter</a>!
 </p>
 
 <style>
   h1 { background-color: black; color: white; }
-  p { font-size: 18apx; }
+  p { font-size: 18px; }
   a { color: red; }
 </style>
 </script>
@@ -987,7 +996,7 @@
       <p class="centered"><img src="assets/css.png" /></p>
       <ul>
         <li>A <strong>basic</strong> <span class="keyword">selector</span> will match its HTML tag name. In this case, all content that is a <code>&lt;h1&gt;</code> will be applied this style.<br /><span class="sidenote">(We'll get into more complex ones later.)</span></li>
-        <li>A <span class="keyword">property</span> is a special label for some visual aspect of the selector such as color or size. You can see a list of them in this <a href="http://www.cheatography.com/davechild/cheat-sheets/css2/">cheatsheet</a>.</li>
+        <li>A <span class="keyword">property</span> is a special label for some visual aspect of the selector such as colour or size. You can see a list of them in this <a href="http://www.cheatography.com/davechild/cheat-sheets/css2/">cheatsheet</a>.</li>
         <li>The property <strong>value</strong> is specific to the property type. For example, <code>color</code> properties accept colour values like <code>blue</code> or <code>#FFFF00</code>. <code>font-size</code> properties accept units of measurements like <code>12px</code> (where "px" stands for pixels).</li>
       </ul>
     </article>  
@@ -1014,7 +1023,7 @@
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Changing the font colour</h2>
-      <p>Now the text is a bit hard to read on the gray background. Because the <code>&lt;body&gt;</code> tag is the highest possible visible HTML tag, the <code>body</code> selector will also allow us to target the font color on the <em>entire</em> page.</p>
+      <p>Now the text is a bit hard to read on the gray background. Because the <code>&lt;body&gt;</code> tag is the highest possible visible HTML tag, the <code>body</code> selector will also allow us to target the font colour on the <em>entire</em> page.</p>
 <pre>body { background-color: gray; <strong>color: white;</strong> }</pre>
     </article>    
 
@@ -1029,7 +1038,7 @@
         <li style="font-family: Georgia;">Georgia</li>
         <li style="font-family: Courier;">Courier</li>
       </ul>
-      <p>Let's add a bit of contrast to our headers by using the Courier font on them.</p>
+      <p>Let's add a bit of contrast to our headings by using the Courier font on them.</p>
 <pre>h1 { font-family: Courier; }
 h2 { font-family: Courier; }</pre>
     </article>
@@ -1039,7 +1048,7 @@ h2 { font-family: Courier; }</pre>
       <h2>Changing the font family</h2>
       <p>Not all fonts are installed on all computers so it's recommended that you use a list of fonts. If the first font in the list isn't available, it will try to use the next.</p>
 <pre>body { background-color: gray; color: white; <strong>font-family: Helvetica, Verdana, Arial, sans-serif;</strong> }</pre>
-      <p class="sidenote">(Notice how the font-family for the headers are still Courier? That's the "cascading" part of Cascading Style Sheets in action. Inline styles take precedence, then innermost tags, then outer tags.)</p>
+      <p class="sidenote">(Notice how the font-family for the headings are still Courier? That's the "cascading" part of Cascading Style Sheets in action. Inline styles take precedence, then innermost tags, then outer tags.)</p>
     </article>
 
     <!-- SLIDE: CSS -->
@@ -1052,7 +1061,7 @@ h2 { font-family: Courier; }</pre>
         <li style="font-size: 1em;">0.5em</li>
         <li style="font-size: 1.5em;">1em</li>
       </ul>
-      <p>Headers have default font-sizes defined by the browser. Let's override them. </p>
+      <p>Headings have default font-sizes defined by the browser. Let's override them. </p>
 <pre>h1 { font-family: Courier; <strong>font-size: 25px;</strong> }
 h2 { font-family: Courier; <strong>font-size: 22px;</strong> }</pre>
 <p class="sidenote">(When you've got more time, read <a href="http://kyleschaeffer.com/best-practices/css-font-size-em-vs-px-vs-pt-vs/" target="_blank">this article</a> for more info on font unit sizes.</p>
@@ -1066,7 +1075,7 @@ h2 { font-family: Courier; <strong>font-size: 22px;</strong> }</pre>
         <li style="font-weight: normal;">normal</li>
         <li style="font-weight: bold;">bold</li>
       </ul>
-      <p>By default, headers are already bolded. Let's remove the bold by applying the <em>normal</em> font weight on them.</p>
+      <p>By default, headings are already bolded. Let's remove the bold by applying the <em>normal</em> font weight on them.</p>
 <pre>h1 { font-family: Courier; font-size: 25px; <strong>font-weight: normal;</strong> }
 h2 { font-family: Courier; font-size: 22px; <strong>font-weight: normal;</strong> }</pre>
     </article>
@@ -1114,7 +1123,7 @@ h2 { font-family: Courier; font-size: 22px; <strong>font-weight: normal;</strong
       <p style="color: #B1009A;">Example: Let's make our links look more button-like</p>
       <p>To add a border you need to set 3 properties:<br />
         <code>border-weight</code>, <code>border-style</code>, and <code>border-color</code>.</p>
-      <p class="sidenote">You can define them seperately, or using shorthand.</p>
+      <p class="sidenote">You can define them separately, or using shorthand.</p>
       <p class="sidenote">Note: CSS comments use the format <code>/* comment */</code></p>
 
 <textarea class='coder-editor'>
@@ -1153,7 +1162,7 @@ a {
       <p style="color: #B1009A;">Example: Let's make our links look more button-like</p>
       <p>To add padding you set 4 properties:<br />
         <code>padding-top</code>, <code>padding-left</code>, <code>padding-bottom</code>, and <code>padding-left</code>.</p>
-      <p class="sidenote">You can define them seperately, or using shorthand (in a clockwise direction).</p>
+      <p class="sidenote">You can define them separately, or using shorthand (in a clockwise direction).</p>
 
 <textarea class='coder-editor'>
 &lt;style&gt;
@@ -1232,7 +1241,7 @@ a {
       <p style="color: #B1009A;">Example: Let's make our links look more button-like</p>
       <p>To add margins you set 4 properties:<br />
         <code>margin-top</code>, <code>margin-left</code>, <code>margin-bottom</code>, and <code>margin-left</code>.</p>
-      <p class="sidenote">You can define them seperately, or using shorthand (in a clockwise direction).</p>
+      <p class="sidenote">You can define them separately, or using shorthand (in a clockwise direction).</p>
 
 
 <textarea class='coder-editor'>
@@ -1329,7 +1338,7 @@ a {
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>CSS interactions &amp; pseudo selectors</h2>
-      <p>CSS is also able to handle some basic UI interactions in our sites, such as allowing a mouse over or "hover" state on various elements. This is frequently done with items such as links.</p>
+      <p>CSS is also able to handle some basic UI interactions in our sites, such as allowing a mouse-over or "hover" state on various elements. This is frequently done with items such as links.</p>
       <p>As part of your selector, you need to use the <code>:hover</code> <span class="keyword">pseudo selector</span>.</p>
 
 <textarea class="coder-editor">
@@ -1408,7 +1417,7 @@ a:hover {
 &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
 
 &lt;p&gt;Follow me on
-  &lt;a href="http://twitter.com/pearlchen" target="_blank"&gt;Twitter&lt;/a&gt;!
+  &lt;a href="http://twitter.com/Linndelicate" target="_blank"&gt;Twitter&lt;/a&gt;!
 &lt;/p&gt;
 </textarea>
 <script type='coder-solution'>&lt;a 
@@ -1437,17 +1446,17 @@ a:hover {
   margin: 15px 10px 0 0;"&gt;Contact&lt;/a&gt;
 
 &lt;p&gt;Follow me on
-  &lt;a href="http://twitter.com/pearlchen" target="_blank"&gt;Twitter&lt;/a&gt;!
+  &lt;a href="http://twitter.com/Linndelicate" target="_blank"&gt;Twitter&lt;/a&gt;!
 &lt;/p&gt;
 </script>
       <br clear="all" />
-      <p class="sidenote">Now that's a lot of CSS! What if you change you mind and decide that the background color should be blue now? Plus you can't apply pseudo selectors like <code>:hover</code> inline.</p>
+      <p class="sidenote">Now that's a lot of CSS! What if you change you mind and decide that the background colour should be blue now? Plus you can't apply pseudo selectors like <code>:hover</code> inline.</p>
     </article>    
 
    <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>CSS classes</h2>
-      <p>If you know that several elements are going to have similiar styles, use CSS classes! Once you define one CSS class, you can apply it over and over again!</p>
+      <p>If you know that several elements are going to have similar styles, use CSS classes! Once you define one CSS class, you can apply it over and over again!</p>
       <ul>
         <li>Use a <strong>period</strong> (<code>.</code>) to define CSS selectors that are classes.<br />
           e.g. <code>.nav_button</code></li>
@@ -1492,7 +1501,7 @@ a:hover {
 &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
 
 &lt;p&gt;Follow me on
-  &lt;a href="http://twitter.com/pearlchen" target="_blank"&gt;Twitter&lt;/a&gt;!
+  &lt;a href="http://twitter.com/Linndelicate" target="_blank"&gt;Twitter&lt;/a&gt;!
 &lt;/p&gt;
 </textarea>
 <script type='coder-solution'>&lt;style&gt;
@@ -1515,7 +1524,7 @@ a:hover {
 &lt;a href="contact.html" class="nav_button"&gt;Contact&lt;/a&gt;
 
 &lt;p&gt;Follow me on
-  &lt;a href="http://twitter.com/pearlchen" target="_blank"&gt;Twitter&lt;/a&gt;!
+  &lt;a href="http://twitter.com/Linndelicate" target="_blank"&gt;Twitter&lt;/a&gt;!
 &lt;/p&gt;
 </script>
     </article>
@@ -1578,7 +1587,7 @@ h1 {
       <ul>
         <li><code>span</code> - An <span class="keyword">inline</span> container.<br />
           Good for highlighting keywords like I did in this bullet.</li>
-        <li><code>div</code> - An <span class="keyword">block</span> container.<br />
+        <li><code>div</code> - A <span class="keyword">block</span> container.<br />
           Much like a paragraph, it creates a line break above and below to create a box.</li>
       </ul>
 <pre>&lt;div&gt;I'm a div!&lt;/div&gt;
@@ -1590,7 +1599,7 @@ h1 {
 
     <article class='slide slide-list'>
       <h2>Semantic HTML Tags</h2>
-      <p>Historically, when making non-trivial websites, it required nesting lots of <code>div</code> tags within <code>div</code> tags (within <code>div</code> tags!) like this:</p>
+      <p>Historically, when making larger websites, it required nesting lots of <code>div</code> tags within <code>div</code> tags (within <code>div</code> tags!) like this:</p>
 <pre>&lt;div&gt;
   &lt;div&gt;
     &lt;div&gt;Home&lt;/div&gt;
@@ -1833,6 +1842,7 @@ footer {
       <p class="centered"><img src="assets/lg_hex_codes.png" widht="500" height="283" alt="" /></p>
       <p class="sidenote">Image source: <a href="http://websiteincite.com/create-your-website/hexadecimal-color-codes" target="_blank">http://websiteincite.com/create-your-website/hexadecimal-color-codes</a></p>
       <p class="sidenote">Chart of many hex colours: <a href="http://www.visibone.com/color/chart_847.gif" target="_blank">http://www.visibone.com/color/chart_847.gif</a></p>
+      <p class="sidenote">There are lots of websites devoted entirely to colour palettes that will also give you hex codes, e.g. <a href="http://kuler.adobe.com/" target="_blank">http://kuler.adobe.com/</a> and <a href="http://www.colourlovers.com/" target="_blank">http://www.colourlovers.com</a></p>
     </article>    
 
     <!-- SLIDE: CSS -->
@@ -1857,7 +1867,7 @@ footer {
       <p>When you get bored of Arial and Georgia, go to the <a href="http://www.google.com/webfonts/" target="_blank">Google Web Fonts</a> website and find a font that you like.</p>
       <ol>
         <li>Click on the "Quick-use" button for that font.</li>
-        <li>Scroll down to find the supplied <code>&lt;link&gt;</code> tag. Copy and paste it into your own HTML file.</li>
+        <li>Scroll down to find the supplied <code>&lt;link&gt;</code> tag. Copy and paste it into the <code>&lt;head&gt;</code> section of your own HTML file.</li>
         <li>Integrate the fonts into your CSS by using their supplied <code>font-family</code>. For example, add their <code>font-family</code> to your <code>h1</code> CSS selector.</li>
         <li>Make sure your files are saved and view your web page in the browser. New fonts are that easy!</li>
       </ol>
@@ -1893,7 +1903,7 @@ background-size: 13px, 29px, 37px, 53px;
       <h2>CSS reference</h2>
       <ul class="spacey_list">
         <li>Download a <a href="http://www.cheatography.com/davechild/cheat-sheets/css2/" target="_blank">cheatsheet of CSS selectors and properties</a>.</li>
-        <li>Try looking up individual selectors and propertie using the CSS section of <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference" target="_blank">Mozilla's Developer Network</a> for further breakdown.</li>
+        <li>Try looking up individual selectors and properties using the CSS section of <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference" target="_blank">Mozilla's Developer Network</a> for further breakdown.</li>
         <li>Read articles from <a href="http://www.alistapart.com/" target="_blank">A List Apart</a>.</li>
         <li>And don't forget the "inspect element" option!</li>
       </ul>
@@ -1934,7 +1944,7 @@ background-size: 13px, 29px, 37px, 53px;
     <article class='slide slide-list'>
       <h2>Where to get this information</h2>
       <div>
-        <p>This information will generaly be provided to you by your hosting service provider.</p>
+        <p>This information will generally be provided to you by your hosting service provider.</p>
         <p>There ARE conventions regarding what directory your files go into once you have connected to your server via FTP:</p>
         <ul>
         <li>www</li>
@@ -1976,7 +1986,7 @@ background-size: 13px, 29px, 37px, 53px;
 
     <!-- SLIDE: TIPS -->
     <article class='slide slide-list'>
-      <h2>One last peice of advice:<br />Clear your cache</h2>
+      <h2>One last piece of advice:<br />Clear your cache</h2>
       <p>Hitting refresh and still seeing old stuff? The browser cache is the rip-your-hair-out <em>gotcha!</em> of every web developer.</p>
       <p>Instructions for every browser (including the archaic one your client is running): <a href="http://www.wikihow.com/Clear-Your-Browser's-Cache" target="_blank">http://www.wikihow.com/Clear-Your-Browser's-Cache</a></p>
       <p>Also try out "Incognito Mode" in Chrome: Ctrl/Cmd+Shift+N</p>
