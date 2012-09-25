@@ -85,8 +85,8 @@
         <br  clear="left" />
       </div>
       <p style="padding-top: 75px; margin-bottom: 0; font-size: 0.9em; color: #999;">
-        ( Original slides by <a href="http://klab.ca/&plus;" target="_blank">Pearl Chen</a>; interactive code slides thanks to
-        <a href="http://cykod.github.com/CoderDeck/" target="_blank" style="color: #999;">CoderDeck</a> )
+        (Original slides by <a href="http://klab.ca/&plus;" target="_blank">Pearl Chen</a>; interactive code slides thanks to
+        <a href="http://cykod.github.com/CoderDeck/" target="_blank" style="color: #999;">CoderDeck</a>)
       </p>
     </article>
 
@@ -95,111 +95,15 @@
       <h2>Course Outline</h2>
       <h3 style="margin-top: 1em;">Morning</h3>
       <ul>
-        <li>Make sure your computer is setup</li>
-        <li>Web development breakdown</li>
-        <li>Dive into HTML</li>
+        <li>What is a website?</li>
+        <li>What do we use to make one?</li>
+        <li>Introducing HTML</li>
       </ul>
       <h3 style="margin-top: 1em;">Afternoon</h3>
       <ul>
-        <li>CSS basics</li>
+        <li>Introducing CSS</li>
         <li>Getting your website online</li>
-        <li style="color: #ccc;">Upload your website</li>
       </ul>
-    </article>
-
-    <!-- SLIDE: Development Environment -->
-    <article class='slide slide-subhead'>
-      <h1>Development Environment</h1>
-      <p>4 tools you need to get started</p>
-    </article>
-
-    <!-- SLIDE: Web Browser -->
-    <article class='slide slide-list'>
-      <h2>1. Web Browser</h2>
-      <p>
-        Choose a modern web browser that has good development tools to help make building web pages easier.
-      </p>
-      <div class="centered contains_sidebyside_icons">
-        <a href="https://www.google.com/chrome" target="_blank"><img src="assets/ChromeIcon.png" width="125" height="125" alt="Chrome" /></a>
-        <br/>
-        <a href="https://www.google.com/chrome" target="_blank">Google Chrome</a>
-      </div>
-      <br clear="all" />
-      <br />
-      <br />
-      <br />
-      <p class="sidenote centered">
-        (If you are unable to install Chrome:
-        <br />
-        install
-        <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a> <b>and</b>
-        <a href="http://getfirebug.com/" target="_blank">Firebug</a>
-        .)
-      </p>
-    </article>
-
-    <!-- SLIDE: Code Editor -->
-    <article class='slide slide-list'>
-      <h2>2. Code Editor</h2>
-      <p>Although you could write code in Notepad or TextEdit, choose a text editor with code colour highlighting and other helpful features.</p>
-      <p>There are many, <em>many</em> free and paid options. I recommend this one that's free to evaluate:</p>
-      <div class="centered contains_sidebyside_icons">
-        <a href="http://www.sublimetext.com" target="_blank"><img src="assets/SublimeTextIcon.jpg" width="125" height="125" alt="Sublime Text 2" /></a>
-        <br />
-        <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a>
-      </div>
-      <br clear="all" />
-    </article>
-
-    <!-- SLIDE: Hackasaurus -->
-    <article class='slide slide-list'>
-      <h2>3. Hackasaurus X-Ray Goggles</h2>
-      <p>
-        Use this bookmarklet to "inspect" any webpage and see how it's built. Click and <strong><em>drag</em></strong> the orange box into your bookmarks bar to install.
-      </p>
-      <p class="sidenote centered">
-        (If you can't see your bookmarks bar, use Ctrl/Cmd+Shift+B in Chrome to toggle visibility.)
-      </p>
-      <br /><br /><br />
-      <div class="centered contains_sidebyside_icons">
-        <a id="hackasaurus" href="javascript:(function(){var script=document.createElement('script');script.src='http://webxray.hackasaurus.org/webxray.js';script.className='webxray';document.head.appendChild(script);})();">X-Ray Goggles</a>
-        <br /><br />
-        (from <a href="http://hackasaurus.org/en-US/goggles/install/" target="_blank">Hackasaurus</a> by Mozilla)
-      </div>
-      <br clear="all" />
-      <br />
-      <br />
-      <br />
-
-    </article>
-
-    <!-- SLIDE: FTP -->
-    <article class='slide slide-list'>
-      <h2>4. File Transfer Program (FTP)</h2>
-      <p>
-        Do you already have your own hosted website? FTP software will let you copy the files you work on today to somewhere where the rest of the world can see them!
-      </p>
-      <div class="centered contains_sidebyside_icons">
-        <a href="http://cyberduck.ch/" target="_blank"><img src="assets/CyberduckIcon.png" width="125" height="125" alt="CyberDuck" /></a>
-        <br />
-        <a href="http://cyberduck.ch/" target="_blank">CyberDuck</a>
-      </div>
-      <br clear="all" />
-      <br />
-      <br />
-      <br />
-      <p class="sidenote centered">
-        Again, there are many, many free and paid options.
-        <br />
-        <a href="http://filezilla-project.org/" target="_blank">FileZilla</a>
-        is good when you're more advanced.
-      </p>
-    </article>
-
-    <!-- new slide -->
-    <article class='slide slide-subhead'>
-      <h1>Organizing your files</h1>
-      <p>Websites, webpages, and file structures</p>
     </article>
 
     <!-- SLIDE: What is a website? -->
@@ -227,7 +131,7 @@
     <!-- SLIDE: What is a website? -->
     <article class='slide slide-list'>
       <h2>What is a website?</h2>
-      <p>Essentially this folder is located on a dedicated computer (also known as a <span class="keyword">server</span>) that <span class="keyword">hosts</span> websites.</p>
+      <p>This folder is located on a <span class="keyword">server</span> that <span class="keyword">hosts</span> websites.</p>
       <div class="centered">
         <img src="assets/webserver_download.png" width="738" height="531" alt="web request process" />
       </div>
@@ -238,19 +142,13 @@
       <h2>Good file naming habits</h2>
       <ul class="spacey_list">
         <li>
-          Keep your file names in <strong>all lowercase</strong>.<br />
-          <span class="sidenote"><code>about.html</code> instead of <code>About.html</code> or <code>ABOUT.html</code></span>
+          Use <strong>lowercase letters</strong>, <strong>numbers</strong> and <strong>hyphens</strong>.<br />
         </li>
         <li>
-          Avoid <code>s p a c e s</code> in your file name. Use underscores instead.<br />
-          <span class="sidenote"><code>business_hours.html</code> instead of <code>business hours.html</code><br />
-            (The browser will interpret it as <code>business%20hours.html</code>)</span>
+          Don&#8217;t use spaces, or symbols like <code>#</code>, <code>&amp;</code>, and <code>*</code>, in your filename.
         </li>
         <li>
-          For the same reason, avoid symbols like <code># &amp; *</code> in your file name.
-        </li>
-        <li>
-          Keep your file names concise, yet meaningful.<br />
+          Choose filenames that are <strong>short</strong> and <strong>meaningful</strong>.<br />
           <span class="sidenote"><code>about.html, contact.html</code> instead of <code>page1.html, page2.html</code></span>
         </li>
       </ul>
@@ -260,7 +158,7 @@
     <article class='slide slide-list'>
       <h2>A basic webpage</h2>
       <p>
-        A webpage is mainly built using 3 web languages:
+        A simple webpage is built using three web languages:
       </p>
       <table width="100%">
       <tr>
@@ -269,7 +167,7 @@
       <td width="33%" class="centered"><strong>CSS</strong> (Cascading Style Sheets) <br>
           is the style sheet language.</td>
       <td width="33%" class="centered"><strong>JavaScript</strong><br>
-          is the programming language.</td>
+          is the scripting language.</td>
       </tr>
             <tr>
       <td class="centered"><img src="assets/TRIAD-html.gif" width="267" height="241" alt="content layer" /></td>
@@ -277,32 +175,121 @@
       <td class="centered"><img src="assets/TRIAD-js.gif" width="274" height="241" alt="Behaviour Layer" /></td>
       </tr>
             <tr>
-      <td class="centered">It should define the <strong>content</strong>.</td>
-      <td class="centered">It should define the <strong>presentation</strong></td>
-      <td class="centered">It should define <strong>behaviour</strong>.</td>
+      <td class="centered">HTML builds the <strong>structure</strong>.</td>
+      <td class="centered">CSS defines the <strong>presentation</strong></td>
+      <td class="centered">JavaScript creates <strong>dynamic behaviour</strong>.</td>
       </tr>
       </table>
     </article>
 
+    <!-- SLIDE: Development Environment -->
+    <article class='slide slide-subhead'>
+      <h1>Web Development Tools</h1>
+      <p>What you&#8217;ll need to get started</p>
+    </article>
+
+    <!-- SLIDE: Web Browser -->
+    <article class='slide slide-list'>
+      <h2>1. Web Browser</h2>
+      <p>
+        Choose a modern Web browser that has good development tools to help make building webpages easier.
+      </p>
+      <div class="centered contains_sidebyside_icons">
+        <a href="https://www.google.com/chrome" target="_blank"><img src="assets/ChromeIcon.png" width="125" height="125" alt="Chrome" /></a>
+        <br/>
+        <a href="https://www.google.com/chrome" target="_blank">Google Chrome</a>
+      </div>
+      <br clear="all" />
+      <br />
+      <br />
+      <br />
+      <p class="sidenote centered">
+        (If you are unable to install Chrome:
+        <br />
+        install
+        <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a> <b>and</b>
+        <a href="http://getfirebug.com/" target="_blank">Firebug</a>
+        .)
+      </p>
+    </article>
+
+    <!-- SLIDE: Code Editor -->
+    <article class='slide slide-list'>
+      <h2>2. Text Editor</h2>
+      <p>Although you could write code in Notepad or TextEdit, choose a text editor with code colour highlighting and other helpful features.</p>
+      <p>There are many, <em>many</em> free and paid options. I recommend this one (it&#8217;s free to evaluate):</p>
+      <div class="centered contains_sidebyside_icons">
+        <a href="http://www.sublimetext.com" target="_blank"><img src="assets/SublimeTextIcon.jpg" width="125" height="125" alt="Sublime Text 2" /></a>
+        <br />
+        <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a>
+      </div>
+      <br clear="all" />
+    </article>
+
+    <!-- SLIDE: X-Ray Goggles -->
+    <article class='slide slide-list'>
+      <h2>3. X-Ray Goggles</h2>
+      <p>
+        Use this bookmarklet to &#8220;inspect&#8221; any webpage and see how it&#8217;s built. Click and <strong><em>drag</em></strong> the orange box into your bookmarks bar to install.
+      </p>
+      <p class="sidenote centered">
+        (If you can&#8217;t see your bookmarks bar, you can turn it on from the View menu.)
+      </p>
+      <br /><br /><br />
+      <div class="centered contains_sidebyside_icons">
+        <a id="hackasaurus" href="javascript:(function(){var script=document.createElement('script');script.src='http://webxray.hackasaurus.org/webxray.js';script.className='webxray';document.head.appendChild(script);})();">X-Ray Goggles</a>
+        <br /><br />
+        (from <a href="http://hackasaurus.org/en-US/goggles/install/" target="_blank">Hackasaurus</a> by Mozilla)
+      </div>
+      <br clear="all" />
+      <br />
+      <br />
+      <br />
+
+    </article>
+
+    <!-- SLIDE: FTP -->
+    <article class='slide slide-list'>
+      <h2>4. File Transfer Program (FTP)</h2>
+      <p>
+        FTP software lets you upload your webpages to a server where the rest of the world can see them!
+      </p>
+      <div class="centered contains_sidebyside_icons">
+        <a href="http://cyberduck.ch/" target="_blank"><img src="assets/CyberduckIcon.png" width="125" height="125" alt="CyberDuck" /></a>
+        <br />
+        <a href="http://cyberduck.ch/" target="_blank">CyberDuck</a>
+      </div>
+      <br clear="all" />
+      <br />
+      <br />
+      <br />
+      <p class="sidenote centered">
+        Again, there are many, many free and paid options.
+        <br />
+        <a href="http://filezilla-project.org/" target="_blank">FileZilla</a>
+        is good when you're more advanced.
+      </p>
+    </article>
+
     <!-- new slide -->
     <article class='slide slide-subhead'>
-      <h1>Dive into HTML</h1>
-      <p>The content layer</p>
+      <h1>Introducing HTML</h1>
+      <p>Creating structured documents</p>
       <p><img src="assets/TRIAD-html.gif" width="267" height="241" alt="content layer" /></p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>What is HTML?</h2>
-      <p>HTML was created for <span class="keyword">web browsers</span> to easily read (not humans).</p>
-      <p>So this makes perfect sense to a web browser:</p>
+      <p>HTML was created for <span class="keyword">web browsers</span> to read.</p>
+      <p>This makes perfect sense to a web browser:</p>
 <pre>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</pre>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>What is HTML?</h2>
-      <p>Whitespace through indentation (tabs) make your more HTML human-readable.</p>
+      <p>Indentation can make your HTML easier for humans to read.</p>
 <pre class='prettyprint'>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -311,7 +298,7 @@
   &lt;body&gt;
   &lt;/body&gt;
 &lt;/html&gt;</pre> 
-      <p class="sidenote">(Later on, you might also notice how automatic colour coding in your code editor helps a lot too.)</p>
+      <p class="sidenote">(Later on, you might notice automatic colour coding in your code editor helps a lot too.)</p>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -319,15 +306,12 @@
       <h2>HTML tags</h2>
       <p>The structure of a webpage is defined by HTML <span class="keyword">tags</span>. Angled brackets denote tags, like this:</p>
       <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;</code></p>
-      <p class="centered sidenote">Think about HTML tags like the beams of a house.<br />
-        It's what holds up a webpage.</p>
-      <p class="centered"><img src="assets/house_beam.jpg" width="300" height="232" alt="house beam" /></p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>HTML tags</h2>
-      <p>Tags typically come in <strong>pairs</strong> -- an opening tag and a closing tag with a forward slash:</p>
+      <p>Tags typically come in <strong>pairs</strong> &#8211; an opening tag and a closing tag. The closing tag is indicated by a forward slash:</p>
       <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;&lt;/tag&gt;</code></p>
       <p class="sidenote">Some examples:</p>
 <pre style="width: 45%; float: left;">&lt;!DOCTYPE html&gt;
@@ -352,25 +336,15 @@
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>HTML tags</h2>
-      <p>Tags typically come in <strong>pairs</strong> -- an opening tag and a closing tag with a forward slash:</p>
-      <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;&lt;/tag&gt;</code></p>
-      <p>Practice writing a <code>body</code> tag with me here:</p>
-<textarea class="coder-editor"></textarea>
-<script type="coder-solution">&lt;body&gt;&lt;/body&gt;</script>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>HTML tags</h2>
-      <p>Tags can be "nested" within other tags, like this:</p>
+      <p>Tags can be &#8220;nested&#8221; within other tags, like this:</p>
       <p class="centered" style="font-size: 2.5em;"><code>&lt;tag&gt;<span style="font-size: 1.3em; color: purple;">&lt;tag&gt;&lt;/tag&gt;</span>&lt;/tag&gt;</code></p>
-      <p class="centered sidenote">(This relationship is often referred to using the terms "parent" node and "child" nodes.)</p>
+      <p class="centered sidenote">(This relationship is often referred to using the terms &#8220;parent&#8221; node and &#8220;child&#8221; nodes.)</p>
       <br />
       <p class="sidenote" style="margin-bottom: 0px;">For example:</p>
       <ul class="sidenote">
         <li><code>&lt;title&gt;</code> is nested between opening and closing <code>&lt;head&gt;</code> tags so <code>&lt;head&gt;</code> is the parent node and <code>&lt;title&gt;</code> is the child node.</li>
         <li>Going further, <code>&lt;head&gt;</code> is also (at the same time) a child node of <code>&lt;html&gt;</code>.</li>
-        <li>While <code>&lt;html&gt;</code> is the always the "root" node and has <strong>no</strong> parent nodes.</li>
+        <li>While <code>&lt;html&gt;</code> is the always the &#8220;root&#8221; node and has <strong>no</strong> parent nodes.</li>
         <li>Notice too that <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> are on the same level. They are both child nodes of <code>&lt;html&gt;</code>.</li>
       </ul>
 <pre style="width: 45%; float: left;">&lt;!DOCTYPE html&gt;
@@ -395,68 +369,26 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>HTML tags</h2>
-      <p>Tags can be "nested" within other tags, like this:</p>
-      <p class="centered" style="font-size: 2.5em;"><code>&lt;tag&gt;<span style="font-size: 1.3em; color: purple;">&lt;tag&gt;&lt;/tag&gt;</span>&lt;/tag&gt;</code></p>
-      <p>Practice writing a <code>head</code> and <code>body</code> tag nested inside of a <code>html</code> tag with me here:</p>
-<textarea class="coder-editor"></textarea>
-<script type="coder-solution">&lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</script>
-<br clear="all" />
-       <p class="centered sidenote"><strong>Remember:</strong> The innermost tag must be closed <strong>before</strong>  trying to open up a new tag.<br />
-        This would be incorrect: &lt;html&gt;&lt;head&gt;&lt;body&gt;&lt;/html&gt;&lt;/head&gt;&lt;/body&gt; </p>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>HTML tags</h2>
-      <p>Tags can be "nested" within other tags, like this:</p>
-      <p class="centered" style="font-size: 2.5em;"><code>&lt;tag&gt;<span style="font-size: 1.3em; color: purple;">&lt;tag&gt;&lt;/tag&gt;</span>&lt;/tag&gt;</code></p>
-      <p>Now where does the <code>title</code> tag get nested? Practice here:</p>
-<textarea class="coder-editor">&lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</textarea>
-<script type="coder-solution">&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</script>
-      <br clear="all" />
-      <p class="centered sidenote"><strong>Remember:</strong> The innermost tag must be closed <strong>before</strong>  trying to open up a new tag.<br />
-        This would be incorrect: &lt;html&gt;&lt;head&gt;&lt;title&gt;&lt;/html&gt;&lt;/head&gt;&lt;/title&gt; </p>
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
       <h2>HTML in a web browser</h2>
       <p>If you ever forget the basic tags needed to build a basic webpage, <code>exercises/barebones.html</code> is available to copy and use.</p>
-      <p>Let's open it up in our code editor!</p>
-      <div class="reminders"><p>Most computers are set to open <code>.html</code> files in the default web browser so <strong>right-click</strong> (Command+click or 2-finger click on Mac) and select the "<strong>open with...</strong>" option.</p></div>
+      <p>Let&#8217;s open it up in our code editor!</p>
+      <div class="reminders"><p>Most computers are set to open <code>.html</code> files in the default web browser so <strong>right-click</strong> (Command+click or 2-finger click on Mac) and select the &#8220;<strong>open with...</strong>&#8221; option.</p></div>
     </article>
 
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>HTML in a web browser</h2>
-      <p>But remember: HTML tags are like the beams of a house -- they denote structure, not content.)  </p>
+      <p>But remember: HTML tags are like the beams of a house &#8211; they denote structure, not content.)  </p>
       <p>So if I view <a href="exercises/barebones.html" target="_blank"><code>barebones.html</code></a> in a web browser, I don't see anything interesting yet...</p>
-      <div class="reminders single-line"><p>If Chrome is not your default web browser, <strong>right-click</strong> and select the "<strong>open with...</strong>" option.</p></div>
+      <div class="reminders single-line"><p>If Chrome is not your default web browser, <strong>right-click</strong> and select the &#8220;<strong>open with...</strong>&#8221; option.</p></div>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>HTML in a web browser</h2>
-      <p>But I can right-click and select <strong>View Page Source</strong> to see what the HTML is to confirm that it's not a blank file.</p>
-      <p class="sidenote">(I suggest that you do this yourself any time you see something you like so you can reverse-engineer it.)</p>
+      <p>But I can right-click and select <strong>View Page Source</strong> to see the HTML and confirm that it&#8217;s not a blank file.</p>
+      <p class="sidenote">(You can do this any time you see something you like, allowing you to reverse-engineer it.)</p>
       <p class="centered"><img src="assets/llcodedotcom_viewsource.gif" width="468" height="362" alt="view source" style="margin-right: 30px;" /></p>
     </article>
 
@@ -479,8 +411,7 @@
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>HTML content</h2>
-      <p class="sidenote">(If HTML tags are the beams of a house, you still need to put up walls and put in furniture for it to be liveable.)</p>
-      <p>The human-viewable content of a HTML tag goes in between the opening and closing tags like this:</p>
+      <p>Your webpage&#8217;s content goes in between the opening and closing HTML tags like this:</p>
       <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;<span style="color: #333;">Content</span>&lt;/tag&gt;</code></p>
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -495,30 +426,14 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>HTML content</h2>
-      <p>The human-viewable content of a HTML tag goes in between the opening and closing tags like this:</p>
-      <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;<span style="color: #333;">Content</span>&lt;/tag&gt;</code></p>
-      <p>Practice writing a <code>body</code> tag with some human-viewable content here:</p>
-<textarea class="coder-editor"></textarea>
-<script type="coder-solution">&lt;body&gt;Hello!&lt;/body&gt;</script>
-      <br clear="all" />
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
       <h2><code>&lt;head&gt;</code> vs <code>&lt;body&gt;</code></h2>
       <p>Using a copy of <code>barebones.html</code>, I'm going to edit it to answer the below questions and prepare you for the following exercise you'll do on your own time.</p>
       <ul class="spacey_list">
         <li>
           What happens when I change the content in the <code>&lt;title&gt;</code> tag?
-          <div class="show-hint" onclick="javascript:showHint('title-tag'); this.style.display = 'none';">click here to show answer...</div>
-          <div id="title-tag" class="hint-solution">It will update the browser tab/window name.</div>
         </li>
         <li>
           What's the difference between putting a tag in-between the <code>&lt;head&gt;</code> tag versus the <code>&lt;body&gt;</code> tag?
-          <div class="show-hint" onclick="javascript:showHint('head-vs-body'); this.style.display = 'none';">click here to show answer...</div>
-          <div id="head-vs-body" class="hint-solution"><code>&lt;head&gt;</code> is for "meta" instructions that the browser will use to render content differently such as the tab title, or the character set to use when displaying a Japanese website, or links to external CSS or JS files.<br />
-            <code>&lt;body&gt;</code> should be used for all the content that actually gets displayed in the main part of the web browser.</div>
         </li>
       </ul>
     </article>
@@ -527,10 +442,10 @@
     <article class='slide slide-list'>
       <h2>Exercise #1 (15 minutes)</h2>
       <ol class="spacey_list">
-        <li>View/open <a href="exercises/1_BASIC_HTML_WEBSITE/index.html" target="_blank"><code>exercises/1_BASIC_HTML_WEBSITE/index.html</code></a> in Chrome.</li>
-        <li>Make a local copy of <code>index.html</code> in the same <code>1_BASIC_HTML_WEBSITE</code> folder and rename it <code>copy.html</code>.<div class="sidenote">(This is so you can always refer back to index.html when needed.)</div></li>
-        <li>Open <code>copy.html</code> in Sublime Text and edit some the content within some of the opening and closing tags.</li>
-        <li>Make sure to save <code>copy.html</code> after changes have been made (Ctrl/Cmd+S).</li>
+        <li>Make a local copy of <code>index.html</code> in the <code>1_BASIC_HTML_WEBSITE</code> folder and rename it <code>copy.html</code>.<div class="sidenote">(This is so you can always refer back to index.html when needed.)</div></li>
+        <li>Open <code>copy.html</code> in Chrome to see the original version.</li>
+        <li>Open <code>copy.html</code> in your text editor and edit the content within the opening and closing tags.</li>
+        <li>Make sure to save <code>copy.html</code> after changes have been made.</li>
         <li>View how <code>copy.html</code> has changed in Chrome by refreshing the webpage.</li>
         <li>Explore some of the HTML tags listed on the <strong>next slide</strong> by adding them to your <code>copy.html</code>. Re-save and re-view in Chrome.</li>
       </ol>
@@ -538,50 +453,30 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Exercise #1 - Simple HTML tags</h2>
+      <h2>Exercise #1 &#8211; Simple HTML tags</h2>
       <div class="sidenote">
-        (Don't forget that viewable content goes in-between opening and closing tag pairs. Notice how Sublime Text will hint at you when/where you might not have closed a tag.)
+        (Don't forget that viewable content goes in-between opening and closing tag pairs. Most text editors will give you hints when you might not have closed a tag.)
       </div>
       <div class="cheatsheet">
         <div>
           <h3>Hierarchy</h3>
-          <code>&lt;hl&gt;</code>, <code>&lt;h2&gt;</code>, etc to <code>&lt;h6&gt;</code> - heading levels 1 to 6<br />
-          <code>&lt;p&gt;</code> - paragraph<br />
+          <code>&lt;hl&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code> &#8211; Heading levels 1 to 6<br />
+          <code>&lt;p&gt;</code> &#8211; Paragraph<br />
         </div>
         <div>
           <h3>Text Formatting</h3>
-          <code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code> - bold<br />
-          <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code> - italics or emphasis<br />
-          <code>&lt;center&gt;</code> - centered<br />
+          <code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code> &#8211; Bold<br />
+          <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code> &#8211; Italics or emphasis<br />
         </div>
         <div>
           <h3>Section Formatting</h3>
-          <code>&lt;blockquote&gt;</code> - indented block of code<br />
-        </div>
-        <div>
-          <h3>Input &amp; Forms</h3>
-          <code>&lt;button&gt;</code> - clickable button<br />
-          <code>&lt;textarea&gt;</code> - multiline text area for user input<br />
+          <code>&lt;blockquote&gt;</code> &#8211; A block quote for extended quotations<br />
         </div>
       </div>
       <br clear="all" />
       <p class="sidenote">You can practice writing some of these tags in the area below:</p>
 <textarea class="coder-editor"></textarea>
  <br clear="all" />
-    </article>
-
-    <!-- SLIDE: HTML -->
-    <article class='slide slide-list'>
-      <h2>Exercise #1 - Exploration Questions</h2>
-      <ul class="spacey">
-        <li>What are acceptable tags that lend well to being nested and what should never be nested?</li>
-        <li>How is whitespace treated? What happens when you use multiple spaces or line breaks?</li> 
-      </ul>
-      <h3>Got more questions?</h3>
-      <p>
-        Post them to this Google Moderator: <a href="http://goo.gl/mod/c4cm" target="_blank" >http://goo.gl/mod/c4cm</a><br />
-        <span class="sidenote">(You'll need to be signed into your Gmail or other Google account.)</span>
-      </p>
     </article>
 
    <!-- new slide -->
@@ -592,42 +487,38 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Void (or empty) HTML Tags</h2>
-      <p><span class="keyword">Void tags</span> don't format content -- instead they are used to render or embed objects in our page.</p>
-      <p>These tags <strong>do not</strong> come in pairs like <code>h1</code> or <code>p</code> tags. You only type the tag once.</p>
-      <p>In some versions of HTML <span class="sidenote">(specifically XHTML... remember <code>DOCTYPE</code>?)</span> they "self-close" with a back slash (<code>/</code>) immediately before the left angled bracket (<code>&gt;</code>). The most often used example of this is the <code>&lt;br /&gt;</code> tag used to create a <strong>line break</strong>.</p>
-<pre class="prettyprint">&lt;p&gt;This text&lt;br /&gt;goes over&lt;br /&gt;several&lt;br /&gt;lines.&lt;/p&gt;
-</pre>
-      <p>This text<br />goes over<br />several<br />lines.</p>
+      <h2>Empty Tags</h2>
+      <p><span class="keyword">Empty tags</span> don&#8217;t format content &#8211; instead they are used to render or embed objects in our page.</p>
+      <p>These tags <strong>do not</strong> come in pairs of opening and closing tags like <code>h1</code> or <code>p</code> tags; instead, there is only an opening tag that &#8220;self-closes&#8221; with a back slash (<code>/</code>) immediately before the left angled bracket (<code>&gt;</code>).</p>
+      <p class="centered" style="font-size: 3em;"><code>&lt;tag /&gt;</code></p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Void (or empty) HTML Tags</h2>
+      <h2>Empty Tags</h2>
       <div class="cheatsheet">
         <div>
-          <h3>Void tags</h3>
-          <code>&lt;hr&gt;</code> or <code>&lt;hr /&gt;</code> - horizontal rule<br />
-          <code>&lt;br&gt;</code> or <code>&lt;br /&gt;</code> - line break<br />
-          <code>&lt;input&gt;</code> or <code>&lt;input /&gt;</code> - text input boxes<br />
+          <h3>Some examples:</h3>
+          <p>
+          <code>&lt;hr /&gt;</code> &#8211; Horizontal rule<br />
+          <code>&lt;br /&gt;</code> &#8211; Line break
+          </p>
           <hr />
-          <code>&lt;img&gt;</code> or <code>&lt;img /&gt;</code> - an image <em>*We'll get to this one very soon.</em><br />
-          <code>&lt;link&gt;</code> or <code>&lt;link /&gt;</code> - define a relationship to an external resource like an external style sheets. <em>*We'll get to this one later today.</em><br />
+          <p>
+          <code>&lt;img /&gt;</code> &#8211; An image <em>(We'll cover images very soon.)</em><br />
+          <code>&lt;link /&gt;</code> &#8211; An external resource like a style sheet. <em>(We'll cover this in more detail this afternoon.)</em><br />
+          </p>
         </div>
       </div>
-      <br clear="all" />
-      <p class="sidenote">Practice some of these tags below:</p>
-<textarea class="coder-editor"></textarea>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Attributes</h2>
-      <p>Quick review:</p>
+      <h2>To Review</h2>
       <ul>
         <li><strong>HTML tags</strong> define <em>structure</em>.</li>
-        <li><strong>Text between opening &amp; closing tags</strong> define <em>content</em>.</li>
-        <li><strong>Void HTML tags</strong> render special objects that are sometimes <em>sort of like content</em> or <em>seem structural</em> depending on the void tag.</li>
+        <li><strong>Text between opening &amp; closing tags</strong> makes up our <em>content</em>.</li>
+        <li><strong>Empty HTML tags</strong> render special objects like line breaks and images.</li>
       </ul>
       <p>Consider the <code>img</code> tag. Not very exciting right?</p>
 <textarea class="coder-editor">&lt;p&gt;Kicking up HTML a notch.&lt;/p&gt;
@@ -638,8 +529,8 @@
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Attributes</h2>
-      <p>Sometimes we need to define data that we don't see right away but it's used by the browser to help render special content like hyperlinks, images, or video.</p>
-      <p class="sidenote">Here's that same <code>img</code> tag but now it's using a tag <span class="keyword">attribute</span> to tell my webpage where to find a source image:</p>
+      <p>Sometimes we need to define values that users don&#8217;t see, but that are used by the browser to render content like hyperlinks, images, or video.</p>
+      <p class="sidenote">Here's that same <code>img</code> tag but now it's using an HTML <span class="keyword">attribute</span> to tell my webpage where to find a source image:</p>
 <textarea class="coder-editor coder-editor-full">&lt;p&gt;Kicking up HTML a notch.&lt;/p&gt;
 &lt;img src="http://goo.gl/7eSU5" /&gt;
 &lt;p&gt;Do you agree?&lt;/p&gt;</textarea>
@@ -650,14 +541,14 @@
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Working with images</h2>
-      <p>Let's look at that again: images are an example of a <span class="keyword">void tag</span> <strong>with</strong> an <span class="keyword">attribute</span>.</p>
+      <p>Images are an example of an <span class="keyword">empty tag</span> with an <span class="keyword">attribute</span>.</p>
       <pre class="prettyprint">&lt;img src="http://goo.gl/7eSU5" /&gt;</pre>
       <ul>
         <li><code>src</code> is the <em>attribute</em></li>
         <li><code>http://goo.gl/7eSU5</code> is the <em>value</em> of that attribute<br />
-          <span class="sidenote">Values are typically surrounded by <em>single or double quotes</em> since occassionally values may contain spaces.</span></li>
+          <span class="sidenote">Values are typically surrounded by <em>double quotes</em> since occassionally values may contain spaces.</span></li>
       </ul>
-      <p>With an <code>img</code> tag, the value of the <code>src</code> attribute tells the browser what the <em>url source</em> of our image is.</p>
+      <p>With an <code>img</code> tag, the value of the <code>src</code> attribute tells the browser what the <em>source</em> of our image is.</p>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -665,8 +556,7 @@
       <h2>Working with images</h2>
       <p>Tags can have more than one attribute, some <strong>required</strong> (like <code>src</code>) and others are <strong>optional</strong>:</p>
       <ul style="margin-top: -1em;">
-        <li><code>width</code> and <code>height</code> tell the browser what dimension to <em>display</em> the image at.<br />
-          <span class="sidenote">(This is useful so the page doesn't jump around when loading very large images, or while on a very slow internet connection such as dial-up or 2G/3G. Also useful to know that width/height values don't necessarily have to match the image's <em>actual</em> width/height.)</span></li>
+        <li><code>width</code> and <code>height</code> tell the browser what dimension to <em>display</em> the image at.</li>
       </ul>
       <hr />
       <p class="sidenote">For example, without <code>width</code> and <code>height</code> attributes, the browser displays image at original size.</p>
@@ -681,10 +571,9 @@
         <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Working with images</h2>
-        <p>Another optional image attribute:</p>
+        <p>Another important image attribute:</p>
         <ul style="margin-top: -1em;">
-          <li><code>alt</code> is <em>alternative text</em> to display to visually impaired web visitors using screen readers. It also shows up when there's a "broken image" due to typos or moved files.<br /> 
-            <span class="sidenote">(Technically, it's required to be "<a href="http://validator.w3.org/" target="_blank">valid</a>" HTML markup which is why you might see <code>alt=""</code> often used.)</span></li>
+          <li><code>alt</code> is <em>alternative text</em> to display to visually impaired web visitors using screen readers. It also shows up when there&#8217;s a &#8220;broken image&#8221; due to typos or moved files.</li>
         </ul>
 <textarea class="coder-editor">&lt;img 
   src="http://goo.gl/7eSU5" 
@@ -696,18 +585,18 @@
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Working with images</h2>
-      <p>In the <code>exercises/2_WORKING_WITH_IMAGES</code> folder, there's an <code>index.html</code> file and 3 images of various types.</p>
+      <p>In the <code>exercises/2_WORKING_WITH_IMAGES</code> folder, there&#8217;s an <code>index.html</code> file and 3 images of various types.</p>
       <div class="reminders"><p>To make your web development life easier, turn on the option to see the file extension type in Explorer (<a href="http://windows.microsoft.com/en-US/windows-vista/Show-or-hide-file-name-extensions" target="_blank">Windows instructions</a>) or Finder (<a href="http://osxdaily.com/2012/01/13/show-filename-extensions-in-mac-os-x/" target="_blank">Mac instructions</a>).</p></div>
-      <p>File type advantages for your reference:</p>
-      <ul style="margin-top: -1em;">
+      <h3>What file type should I use?</h3>
+      <ul>
         <li>
-          <span class="keyword">gif</span> - smaller file size when used for line art, charts, and images with minimal colour variation
+          <span class="keyword">.gif</span> &#8211; Smaller file size when used for line art, charts, and images with minimal colour variation
         </li>
         <li>
-          <span class="keyword">jpg</span> - smaller file size when used for photographs with lots of rich colours or gradients
+          <span class="keyword">.jpg</span> &#8211; Smaller file size when used for photographs with lots of rich colours or gradients
         </li>
         <li>
-          <span class="keyword">png</span> - larger file size but has best quality and is great for images with transparent backgrounds
+          <span class="keyword">.png</span> &#8211; Larger file size, but provides the best quality and is great for images with transparent backgrounds
         </li>
       </ul>
 
@@ -726,39 +615,39 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 1)</span></h2>
+      <h2>Working with images</h2>
       <p>Code along with me:</p>
       <ol class="spacey_list">
-        <li>Open <a href="exercises/2_WORKING_WITH_IMAGES/index.html" target="_blank"><code>exercises/2_WORKING_WITH_IMAGES/index.html</code></a> in Sublime Text. <span class="sidenote">(It's simply a copy of <code>barebones.html</code>.)</span></li>
+        <li>Open <a href="exercises/2_WORKING_WITH_IMAGES/index.html" target="_blank"><code>exercises/2_WORKING_WITH_IMAGES/index.html</code></a> in your text editor.</li>
         <li>Click on the above link to also view <code>index.html</code> in Chrome. </li>
-        <li>Use the <code>img</code> tag to embed an image of our fave LOL cat using <code>http://goo.gl/mod/c4cm</code> for the value of the <code>src</code> attribute.</li>
+        <li>Use the <code>img</code> tag to embed an image of our fave LOL cat using <code>http://goo.gl/7eSU5</code> for the value of the <code>src</code> attribute.</li>
         <li>Save and refresh the webpage in the browser to make sure you got it right.</li>
       </ol>
       <p class="centered" style="font-size: 2.5em;">This is an example of an <span class="keyword">absolute path</span>.</p>
-      <p>It's "fully resolved" and starts with <code>http://</code> much like typing in a url into the browser's URL bar.</p>
+      <p>It&#8217;s &#8220;fully resolved&#8221; and starts with <code>http://</code> much like a url from the browser&#8217;s URL bar.</p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 2)</span></h2>
+      <h2>Working with images <span style="font-size: 22px;">(Group exercise &#8211; Part 2)</span></h2>
       <p>Code along with me:</p>
       <ol class="spacey_list">
-        <li>Return to our <code>img</code> tag in <code>index.html</code> and let's instead embed <code>llc.gif</code> which we have locally.</li>
+        <li>Return to our <code>img</code> tag in <code>index.html</code> and use <code>llc.gif</code>, a file we have locally, as our image source.</li>
       </ol>
       <p class="centered" style="font-size: 2.5em;">This is an example of a <span class="keyword">relative path</span>.</p>
-      <p>It's based on using the html file that you're working on as the starting point to find your image source.</p>
-      <p>Right now, <code>llc.gif</code> in the <strong>same folder</strong> as <code>index.html</code>.</p>
+      <p>Relative paths use the HTML file that you&#8217;re working on as the starting point to find the location of your image.</p>
+      <p>Right now, <code>llc.gif</code> is in the <strong>same folder</strong> as <code>index.html</code>, so we can simply use the filename as our image source.</p>
       <ol class="spacey_list" start="2">
-        <li>Open the <a href="exercises/2_WORKING_WITH_IMAGES/images/images.html" target="_blank"><code>images.html</code></a> file in the <code>img</code> folder in Sublime Text.</li>
+        <li>Open the <a href="exercises/2_WORKING_WITH_IMAGES/images/images.html" target="_blank"><code>images.html</code></a> file in the <code>img</code> folder in your text editor.</li>
         <li>Click on the above link to also view <code>images.html</code> in Chrome. </li>
-        <li>Note that there's already an <code>img</code> tag in <code>images.html</code> trying to embed <code>llc.gif</code>.</li>
+        <li>Note that there&#8217;s already an <code>img</code> tag in <code>images.html</code> trying to embed <code>llc.gif</code>.</li>
       </ol>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 3)</span></h2>
-      <p>To write a <span class="keyword">relative path</span> that goes <strong><em>up</em></strong> a folder, start path with "<code>../</code>".</p>
+      <h2>Working with images <span style="font-size: 22px;">(Group exercise &#8211; Part 3)</span></h2>
+      <p>To write a <span class="keyword">relative path</span> that goes <strong><em>up</em></strong> a folder, start the path with <code>../</code></p>
       <pre class="prettyprint">&lt;img src="<strong>../</strong>llc.gif" /&gt;</pre>
       <p>Code along with me:</p>
       <ol class="spacey_list">
@@ -768,23 +657,19 @@
       <hr />
       <p class="sidenote">An aside: <code>../</code> can be used multiple times if you have many nested folders.</p>
       <pre class="prettyprint">&lt;img src="<strong>../../../../</strong>llc.gif" /&gt;</pre>
-      <div>How many folders does this relative path go up?</div>
-      <div class="show-hint" onclick="javascript:showHint('nested-img-path'); this.style.display = 'none';">click here to show answer...</div>
-      <div id="nested-img-path" class="hint-solution">Four.</div>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 4)</span></h2>
-      <p>However, it's best practice to organize your images into its own folder to keep your website's file structure tidy.</p>
-      <p class="sidenote">We tend to also organize JavaScript files into their own "js" folder and CSS files into their own "css" folder.</p>
-      <p>So let's <strong>move all of our images into the <code>images</code> folder</strong> of <code>2_WORKING_WITH_IMAGES</code>.</p>
-      <p>Uh oh! Now our image will be broken in <code>index.html</code> since the image is no longer in the same folder. Let's fix that...</p>
+      <h2>Working with images <span style="font-size: 22px;">(Group exercise &#8211; Part 4)</span></h2>
+      <p>It&#8217;s best practice to organize your images into their own folder to keep your website's file structure tidy.</p>
+      <p>Let&#8217;s <strong>move all of our images into the <code>images</code> folder</strong> of <code>2_WORKING_WITH_IMAGES</code>.</p>
+      <p>Uh oh! Now our image will be broken in <code>index.html</code> since the image is no longer in the same folder. Let&#8217;s fix that...</p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Working with images <span style="font-size: 22px;">(Group exercise - Part 5)</span></h2>
+      <h2>Working with images <span style="font-size: 22px;">(Group exercise &#8211; Part 5)</span></h2>
       <p>To write a <span class="keyword">relative path</span> that goes <strong><em>into</em></strong> a folder, start path with the <strong>folder name</strong> followed by a backslash (<code>/</code>).</p>
       <pre class="prettyprint">&lt;img src="<strong>images/</strong>llc.gif" /&gt;</pre>
       <ol class="spacey_list">
@@ -804,9 +689,9 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Hyperlinks</h2>
-      <p>The <code>&lt;a&gt;</code> <em>anchor</em> tag is used to tell the browser that we want to link to somewhere else on our site or on the web.</p>
-      <p>The <code>a</code> tag comes in pairs and the content between the opening and closing tags is what is displayed as the link text (typically underlined).</p>
+      <h2>Links</h2>
+      <p>The <code>&lt;a&gt;</code> tag &#8211; called an <em>anchor</em> tag &#8211; is used to create a link.</p>
+      <p><code>&lt;a&gt;</code> tags come in pairs and the content between the opening and closing tags is what is displayed as the link text (typically underlined).</p>
       <br />
       <pre class="prettyprint">Visit &lt;a&gt;Ladies Learning Code&lt;/a&gt;.</pre>
       <p>Visit <a>Ladies Learning Code</a>.</p>
@@ -816,7 +701,7 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Hyperlinks</h2>
+      <h2>Links</h2>
       <p>We need a way of setting the URL <span class="sidenote">(e.g. <code>http://ladieslearningcode.com</code>)</span> that the browser will request when someone clicks on the link.</p>
       <p>Once again, we need to use <span class="keyword">attributes</span>.</p>
       <pre class="prettyprint">Visit &lt;a <strong>href="http://ladieslearningcode.com"</strong>&gt;Ladies Learning Code&lt;/a&gt;.</pre>
@@ -824,30 +709,26 @@
       <ul>
         <li><code>href</code> is the <em>attribute</em></li>
         <li><code>http://ladieslearningcode.com</code> is the <em>value</em> of that attribute</li>
-        <li>And remember that the <strong>clickable text goes in between</strong> the opening and closing <code>a</code> tags.</li>
+        <li>The <strong>clickable text</strong> goes in between the opening and closing <code>&lt;a&gt;</code> tags.</li>
       </ul>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Exercise #2 (10-15 minutes)</h2>
+      <h2>Exercise #2 (10&#8211;15 minutes)</h2>
       <ol class="spacey_list">
-        <li>Continue using <code>index.html</code> from the <code>2_WORKING_WITH_IMAGES</code> folder in Sublime Text.</li>
-        <li>Create a text link using the <code>&lt;a&gt;</code> tag that points to "http://ladieslearningcode.com".</li>
-        <li>Using your knowledge of the <code>&lt;a&gt;</code> tag, try to create a <em>clickable image</em> using both the <code>&lt;img&gt;</code> and <code>&lt;a&gt;</code> tags. Clicking on the image should open up "http://ladieslearningcode.com".<br />
+        <li>Continue editing <code>index.html</code> from the <code>2_WORKING_WITH_IMAGES</code> folder in your text editor.</li>
+        <li>Create a text link using the <code>&lt;a&gt;</code> tag that points to <code>http://ladieslearningcode.com</code></li>
+        <li>Using your knowledge of the <code>&lt;a&gt;</code> tag, try to create a <em>clickable image</em> using both the <code>&lt;img&gt;</code> and <code>&lt;a&gt;</code> tags. Clicking on the image should open up <code>http://ladieslearningcode.com</code><br />
         <span class="sidenote">(Hint: This involves nested HTML tags.)</span>
         </li>
       </ol>
-      <p class="sidenote">Make sure to save <code>index.html</code> after changes have been made (Ctrl/Cmd+S) and before confirming your edits in Chrome.</p>
-      <h3>Got questions?</h3>
-      <p>
-        Post them to Google Moderator: <a href="http://goo.gl/mod/c4cm" target="_blank" >http://goo.gl/mod/c4cm</a>
-      </p>
+      <p class="sidenote">Make sure to save <code>index.html</code> after making changes and before viewing those changes in Chrome.</p>
     </article>
 
     <article class='slide slide-list'>
       <h2>Getting ready for Exercise #3</h2>
-      <p>We're eventually aiming to have a <strong>3-page</strong> website that uses a standard 2-column webpage layout.</p>
+      <p>We&#8217;re going to build a <strong>3-page</strong> website that uses a standard 2-column webpage layout.</p>
       <p class="centered"><img src="assets/2-column-webpage.png" width="703" height="411" alt="" /></p>
     </article>
 
@@ -856,7 +737,7 @@
       <p>Code along and review with me!</p>
       <p>Make a new <code>index.html</code> in the <code>exercises/website</code> folder.</p>
       <ol>
-        <li>What's the <strong>very first line</strong> we need to type?</li>
+        <li>What&#8217;s the <strong>very first line</strong> we need to type?</li>
         <li>What <strong>three</strong> HTML tags should every website have?</li>
         <li>What HTML tag do I need to update the browser tab with a descriptive tab name? And where does it go?</li>
       </ol>
@@ -867,7 +748,7 @@
   &lt;/nav&gt;
 </pre>
       <ol start="4">
-        <li>In between which tag do I paste this code since it's content that should be <strong>visible to the user</strong>?</li>
+        <li>In between which tag do I paste this code since it&#8217;s content that should be <strong>visible to the user</strong>?</li>
       </ol>
     </article>
 
@@ -875,9 +756,9 @@
       <h2>Exercise #3 (now until lunch)</h2>
       <p>On your own:</p>
       <ol class="spacey_list">
-        <li>Eventually there will be <code>about.html</code> and <code>contact.html</code>. Use the <code>&lt;a&gt;</code> tag with a <code>href</code> attribute to link all your pages together.</li>
-        <li>Based on <code>index.html</code>, create those 2 new files for About and Contact  in the same <code>website</code> folder as <code>index.html</code>.</li> 
-        <li>Make sure that all your webpages have descriptive and unique <code>&lt;title&gt;</code>'s.</li>
+        <li>There will be two more pages: <code>about.html</code> and <code>contact.html</code>. Use the <code>&lt;a&gt;</code> tag with an <code>href</code> attribute to link all your pages together.</li>
+        <li>Based on <code>index.html</code>, create those 2 new files for About and Contact  in the same <code>website</code> folder as <code>index.html</code>. Name these files <code>about.html</code> and <code>contact.html</code>.</li> 
+        <li>Make sure that all your webpages have a descriptive and unique <code>&lt;title&gt;</code>.</li>
         <li>Confirm that you can click between all the pages using the navigation links. Fix them if needed.</li>
         <li>Update <code>about.html</code> with a picture and bio.<br />
           <span class="sidenote">(You can even try adding a YouTube video based on the notes on the next slide.)</span></li>
@@ -886,38 +767,33 @@
         <li><strong>Don't</strong> update <code>index.html</code> any more!<br/>
           <span class="sidenote">We'll get to that <strong>after</strong> lunch.</span></li>
       </ol>
-      
-      <h3>Got questions?</h3>
-      <p>
-        Post them to Google Moderator: <a href="http://goo.gl/mod/c4cm" target="_blank" >http://goo.gl/mod/c4cm</a>
-      </p>
     </article> 
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Bonus: Add video to your webpage</h2>
-      <p>As time goes on, it has become easier and easier to embed multimedia content into websites.</p>
-      <p>From YouTube, you can find an <strong>Embed Code</strong> to put into your website <span class="sidenote">(click on "Share" button below video, then "Embed")</span> and YouTube's servers do all the rest of the work via the <code>iframe</code> tag.</p>
+      <p>It&#8217;s easier than ever to embed a video into your webpage!</p>
+      <p>From YouTube, you can find an <strong>Embed Code</strong> to put into your HTML <span class="sidenote">(click on "Share" button below video, then "Embed")</span>, and YouTube&#8217;s servers do all the rest of the work via the <code>iframe</code> tag.</p>
       <pre class="prettyprint">&lt;iframe width="560" height="315" src="http://www.youtube.com/embed/tlnFyjpV5Wo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</pre>
       <iframe width="560" height="315" src="http://www.youtube.com/embed/tlnFyjpV5Wo" frameborder="0" allowfullscreen></iframe>
-      <p>Adding a Google Map is similiar. <a href="assets/google_map_embed.jpg" target="_blank">Click here for instructional screenshot.</a></p>
+      <p>Adding a Google Map is similiar. <a href="assets/google_map_embed.jpg" target="_blank">Click here for an instructional screenshot.</a></p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>HTML reference</h2>
       <ul class="spacey_list">
-        <li>Download a <a href="http://woorkup.com/2009/12/16/html5-visual-cheat-sheet-reloaded/" target="_blank">cheatsheet of HTML tags</a>. (Copy in the <code>cheatsheets</code> folder.)</li>
-        <li>Try looking up individual tags using the HTML sections of <a href="https://developer.mozilla.org/en-US/docs/HTML/Element" target="_blank">Mozilla's Developer Network</a> or the <a href="http://www.w3.org/community/webed/wiki/HTML/Elements" target="_blank">W3C</a> for further breakdown.</li>
+        <li>Download a <a href="http://woorkup.com/2009/12/16/html5-visual-cheat-sheet-reloaded/" target="_blank">cheatsheet of HTML tags</a>. (There is a copy in the <code>cheatsheets</code> folder.)</li>
+        <li>Try looking up individual tags using the HTML sections of <a href="https://developer.mozilla.org/en-US/docs/HTML/Element" target="_blank">Mozilla's Developer Network</a> or the <a href="http://www.w3.org/community/webed/wiki/HTML/Elements" target="_blank">W3C</a> for more details about attributes and tag usage.</li>
         <li>For further exploration, use the <a href="http://hackasaurus.org/en-US/goggles/install/" target="_blank">Hackasaurus X-Ray Goggles</a> to look at any webpage.</li>
-        <li>And don't forget the "view source" option of your web browser!</li>
+        <li>And don&#8217;t forget the &#8220;view source&#8221; option of your web browser!</li>
       </ul>
     </article>  
 
 
     <!-- CSS -->
     <article class='slide slide-subhead'>
-      <h1>CSS basics</h1>
+      <h1>Introducing CSS</h1>
       <p>The presentation layer</p>
       <p><img src="assets/TRIAD-css.gif" width="261" height="241" alt="Presentation Layer" /></p>
     </article>  
