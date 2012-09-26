@@ -1408,7 +1408,7 @@ a:hover {
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>External CSS</h2>
-      <p>Instead of duplicating your <code>&lt;style&gt;</code> content for every webpage, make one single CSS document ending with a <code>.css</code> extension and link to it in the <code>&lt;head&gt;</code> tag instead of (or in addition to) a <code>&lt;style&gt;</code> tag.</p>
+      <p>Instead of duplicating your <code>&lt;style&gt;</code> content for every webpage, make one single CSS document ending with a <code>.css</code> extension, and link to it in the <code>&lt;head&gt;</code> tag instead of (or in addition to) a <code>&lt;style&gt;</code> tag.</p>
 <pre>
 &lt;head&gt;
   <strong>&lt;link rel="stylesheet" href="styles.css" type="text/css" /&gt;</strong>
@@ -1420,7 +1420,7 @@ a:hover {
 &lt;/head&gt;
 </pre>
 
-      <p>Inside styles.css, there is <strong>no</strong> <code>&lt;style&gt;</code> tag:</p>
+      <p>Inside styles.css, there is <strong>no</strong> <code>&lt;style&gt;</code> or <code>&lt;/style&gt;</code> tag:</p>
 <pre>
 body {
   background-color: black;
@@ -1441,19 +1441,15 @@ h1 {
       <ul>
         <li>Update your navigation in <code>index.html</code> to look more button-like.</li>
         <li>Create a single <code>styles.css</code> file and link to this external stylesheet from all 3 webpages using the <code>&lt;link&gt;</code> tag. Consolidate all of your CSS into this external stylesheet.</li>
-        <li>If you've got extra time, try out some new CSS properties from the cheatsheet and other resources listed on the <a href="#slide-94">CSS resources slide</a>.</li>
+        <li>If you've got extra time, try out some new CSS properties from the cheatsheet and other resources listed on the <a href="#slide-88">CSS resources slide</a>.</li>
       </ul>
-      <h3>Got questions?</h3>
-      <p>
-        Post them to Google Moderator: <a href="http://goo.gl/mod/c4cm" target="_blank" >http://goo.gl/mod/c4cm</a>
-      </p>
     </article>
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Laying out webpages with CSS</h2>
       <p>Layout is one of the most challenging things to do in CSS because it requires you to think about the whole picture and plan ahead.</p>
-      <p>To creating a standard 2-column layout requires us to give dimensions to some of our content, and position it accordingly.</p>
+      <p>Creating a standard 2-column layout requires us to give dimensions to some of our content, and position it accordingly.</p>
       <p class="centered"><img src="assets/2-column-webpage.png" width="703" height="411" alt="" /></p>
     </article>
 
@@ -1557,8 +1553,8 @@ h1 {
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Assigning widths</h2>
-      <p>It is important to know the overall width of your site so you can select column widths for the main <code>&lt;section&gt;</code> and the <code>&lt;aside&gt;</code> sidebar that will make sense.</p>
-      <p>Let's go ahead and set the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> to be 960 pixels wide. We'll add a gray border too, so we can see what's going on.</p>
+      <p>It is important to know the overall width of your site, so you can select column widths for the main <code>&lt;section&gt;</code> and the <code>&lt;aside&gt;</code> sidebar that will make sense.</p>
+      <p>Let's go ahead and set the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> to be 960 pixels wide. We'll add a grey border too, so we can see what's going on.</p>
 <pre>
 header {
   <strong>width: 960px;</strong>
@@ -1589,9 +1585,9 @@ aside {
   border: 1px solid gray;
 }
 </pre>
-      <p class="sidenote"><strong>PRO TIP:</strong> Historically, padding wrecked havoc on our math. To avoid headaches, use the <a href="http://paulirish.com/2012/box-sizing-border-box-ftw/" target="_blank">box-sizing property</a> for every website you make to make sure your math adds up.</p>
+      <p class="sidenote"><strong>PRO TIP:</strong> Historically, padding could wreak havoc on our column math. To avoid headaches, use the <a href="http://paulirish.com/2012/box-sizing-border-box-ftw/" target="_blank">box-sizing property</a> for every website you make to make sure your math adds up.</p>
 <pre>
-/* apply a natural box layout model to all elements */
+/* apply a more intuitive box layout model to all elements */
 <strong>* { 
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
@@ -1634,7 +1630,7 @@ footer {
   <strong>clear: both;</strong>
 }
 </pre>
-      <br /><br /><br />
+      <br />
       <hr />
       <p class="sidenote">If the elements that are floating are enclosed in another container, you can you apply <code>overflow:auto</code> to the parent container:</p>
 <pre>nav {
@@ -1649,15 +1645,15 @@ footer {
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>CSS id's</h2>
-      <p>CSS classes are great when you want to re-apply the same style to multiple HTML elements but sometimes you need to only target an HTML container <strong>once</strong>. This is where an <span class="keyword">ID</span> is useful.</p>
+      <p>CSS classes are great when you want to re-apply the same style to multiple HTML elements, but sometimes you only need to target an HTML container <strong>once</strong>. This is where an <span class="keyword">ID</span> is useful.</p>
       <ul>
-        <li>Use a <strong>hash</strong> (<code>#</code>) to define CSS selectors that are IDs.<br />
+        <li>In your CSS, use a <strong>hash</strong> (<code>#</code>) to define CSS selectors that are IDs.<br />
           e.g. <code>#centered_on_page</code></li>
-        <li>Use the <code>id</code> attribute to apply the styles to that element.<br />
+        <li>Then in your HTML, use the <code>id</code> attribute to apply the styles to that element.<br />
           e.g. <code>id="centered_on_page"</code><br />
         </li>
       </ul>
-      <p class="sidenote"><strong>Important!</strong> You should only have <strong>one</strong> instance of an ID per page. Any more can cause unexpected things to happen with your CSS -- and later, JavaScript.</p>
+      <p class="sidenote"><strong>Important!</strong> You should only have <strong>one</strong> instance of an ID per page. Any more can cause unexpected things to happen with your CSS &mdash; and later, JavaScript.</p>
 <textarea class="coder-editor">
 &lt;style&gt;
   #centered_on_page {
@@ -1731,10 +1727,6 @@ footer {
         <li>Apply some custom colours to your text in any of your web pages.</li>
         <li>Research the <code>background-image</code> property and add a background image to webpages.</li>
       </ul>
-      <h3>Got questions?</h3>
-      <p>
-        Post them to Google Moderator: <a href="http://goo.gl/mod/c4cm" target="_blank">http://goo.gl/mod/c4cm</a>
-      </p>
     </article>
 
     <!-- SLIDE: CSS -->
@@ -1751,35 +1743,10 @@ footer {
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
-      <h2>Bonus: CSS patterns for fun</h2>
-      <p>CSS is great because it can reduce the number of image files you need to create. You can even create <a href="http://lea.verou.me/css3patterns/#" target="_blank">patterns purely out of CSS</a>!</p>
-      <ol>
-        <li>Click on a pattern that you like.</li>
-        <li>Copy the supplied CSS.</li>
-        <li>Instead of an "ad" in your sidebar, paste the CSS into your <code>aside</code> selector. Or apply it to your <code>body</code> selector to change up the entire page.</li>
-        <li>Important: Due to the differences in CSS support in web browsers, you will need to duplicate the <code>background-image</code> property-value set and replace <code>linear-gradient</code> with <code>-webkit-linear-gradient</code>.</li>
-      </ol>
-<pre style="font-size: 14px;">
-/* Based on Cicada stripes from http://lea.verou.me/css3patterns/#cicada-stripes */
-background-color: #026873;
-background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
-                  linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
-                  linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
-                  linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
-<strong>background-image: -webkit-linear-gradient(0deg, rgba(255,255,255,.07) 50%, transparent 50%),
-                  -webkit-linear-gradient(0deg, rgba(255,255,255,.13) 50%, transparent 50%),
-                  -webkit-linear-gradient(0deg, transparent 50%, rgba(255,255,255,.17) 50%),
-                  -webkit-linear-gradient(0deg, transparent 50%, rgba(255,255,255,.19) 50%);</strong>
-background-size: 13px, 29px, 37px, 53px;
-</pre>
-    </article>
-
-    <!-- SLIDE: CSS -->
-    <article class='slide slide-list'>
       <h2>CSS reference</h2>
       <ul class="spacey_list">
         <li>Download a <a href="http://www.cheatography.com/davechild/cheat-sheets/css2/" target="_blank">cheatsheet of CSS selectors and properties</a>.</li>
-        <li>Try looking up individual selectors and properties using the CSS section of <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference" target="_blank">Mozilla's Developer Network</a> for further breakdown.</li>
+        <li>Try looking up individual selectors and properties using the CSS section of <a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference" target="_blank">Mozilla's Developer Network</a> for a further breakdown.</li>
         <li>Read articles from <a href="http://www.alistapart.com/" target="_blank">A List Apart</a>.</li>
         <li>And don't forget the "inspect element" option!</li>
       </ul>
@@ -1821,7 +1788,7 @@ background-size: 13px, 29px, 37px, 53px;
       <h2>Where to get this information</h2>
       <div>
         <p>This information will generally be provided to you by your hosting service provider.</p>
-        <p>There ARE conventions regarding what directory your files go into once you have connected to your server via FTP:</p>
+        <p>There are conventions regarding what directory your files go into once you have connected to your server via FTP, which can differ depending on your host:</p>
         <ul>
         <li>www</li>
         <li>public</li>
@@ -1837,6 +1804,7 @@ background-size: 13px, 29px, 37px, 53px;
       <div>
         <p>Once you have identified where your files need to go, it is often just a matter of dragging and dropping into your FTP program.</p>
         <p>Once this is done, you can check your web address to see how things are looking!</p>
+	<p class="sidenote">Remember to always have an <code>index.html</code> file if you want people to be able to visit your domain directly. For example, <code>ladieslearningcode.com</code> is actually pointing to <code>ladieslearningcode.com/index.html</code>!</p>
       </div>
     </article>  
 
@@ -1855,7 +1823,7 @@ background-size: 13px, 29px, 37px, 53px;
     <article class='slide slide-list'>
       <h2>Validating your HTML</h2>
       <div>
-        <p>One of the best ways to make sure that your HTML is being done correctly is to run it through an HTML validator on occasion.</p>
+        <p>One of the best ways to make sure that your HTML has been written correctly is to run it through an HTML validator on occasion.</p>
         <p>You can find the HTML validator at <a href="http://validator.w3.org/" target="_blank">http://validator.w3.org/</a></p>
       </div>
     </article> 
