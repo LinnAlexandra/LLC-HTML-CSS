@@ -852,8 +852,7 @@
   <a href="http://twitter.com/Linndelicate" target="_blank">Twitter</a>!
 </p>
 </textarea>
-<script type='coder-solution'>
-<h1>Welcome!</h1>
+<script type='coder-solution'><h1>Welcome!</h1>
 <p>This is my website.</p>
 
 <h1>Social Media</h1>
@@ -876,7 +875,7 @@
       <p>Here's a CSS declaration dissected:</p>
       <p class="centered"><img src="assets/css.png" /></p>
       <ul>
-        <li>A <strong>basic</strong> <span class="keyword">selector</span> will match its HTML tag name. In this case, all content that is a <code>&lt;h1&gt;</code> will be applied this style.<br /><span class="sidenote">(We'll get into more complex ones later.)</span></li>
+        <li>A <strong>basic</strong> <span class="keyword">selector</span> will match its HTML tag name. In this case, all content that is a <code>&lt;h1&gt;</code> will have this style applied to it.<br /><span class="sidenote">(We'll get into more complex selectors later.)</span></li>
         <li>A <span class="keyword">property</span> is a special label for some visual aspect of the selector such as colour or size. You can see a list of them in this <a href="http://www.cheatography.com/davechild/cheat-sheets/css2/"  target="_blank">cheatsheet</a>.</li>
         <li>The property <strong>value</strong> is specific to the property type. For example, <code>color</code> properties accept colour values like <code>blue</code> or <code>#FFFF00</code>. <code>font-size</code> properties accept units of measurements like <code>12px</code> (where "px" stands for pixels).</li>
       </ul>
@@ -888,7 +887,7 @@
       <p>Here's a CSS declaration dissected:</p>
       <p class="centered"><img src="assets/css.png" /></p>
       <ul>
-        <li>Use <strong>curly braces</strong> (<code>{}</code>) to hold a list of the property:value sets.</li> 
+        <li>Use <strong>curly braces</strong> (<code>{}</code>) to hold property:value sets.</li> 
         <li>You can define multiple property:value sets but you must end each one with a <strong>semi-colon</strong> (<code>;</code>).</li>
       </ul>
     </article>  
@@ -897,14 +896,14 @@
     <article class='slide slide-list'>
       <h2>Changing the page's background colour</h2>
       <p>View <code><a href="exercises/3_CSS/index.html" target="_blank">exercises/3_CSS/index.html</a></code> in your browser. Notice how we're using a transparent PNG so it's hard to read all the white letters on a white background.</p>
-      <p>Let's add a <code>&lt;style&gt;</code> tag between the <code>&lt;head&gt;</code>. Then add this:</p>
+      <p>Let's add a <code>&lt;style&gt;</code> tag between the <code>&lt;head&gt;</code> tags. Then add this:</p>
 <pre>body { background-color: gray; }</pre>
     </article>
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Changing the font colour</h2>
-      <p>Now the text is a bit hard to read on the gray background. Because the <code>&lt;body&gt;</code> tag is the highest possible visible HTML tag, the <code>body</code> selector will also allow us to target the font colour on the <em>entire</em> page.</p>
+      <p>Now the text is a bit hard to read on the grey background. Because the <code>&lt;body&gt;</code> tag is the highest possible visible HTML tag, the <code>body</code> selector will also allow us to target the font colour on the <em>entire</em> page.</p>
 <pre>body { background-color: gray; <strong>color: white;</strong> }</pre>
     </article>    
 
@@ -927,7 +926,7 @@ h2 { font-family: Courier; }</pre>
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Changing the font family</h2>
-      <p>Not all fonts are installed on all computers so it's recommended that you use a list of fonts. If the first font in the list isn't available, it will try to use the next.</p>
+      <p>Not all fonts are installed on all computers so it's recommended that you use a list of fonts, ordered by preference. If the first font in the list isn't available, the browser will try to use the next font, and so on.</p>
 <pre>body { background-color: gray; color: white; <strong>font-family: Helvetica, Verdana, Arial, sans-serif;</strong> }</pre>
       <p class="sidenote">(Notice how the font-family for the headings are still Courier? That's the "cascading" part of Cascading Style Sheets in action. Inline styles take precedence, then innermost tags, then outer tags.)</p>
     </article>
@@ -945,18 +944,18 @@ h2 { font-family: Courier; }</pre>
       <p>Headings have default font-sizes defined by the browser. Let's override them. </p>
 <pre>h1 { font-family: Courier; <strong>font-size: 25px;</strong> }
 h2 { font-family: Courier; <strong>font-size: 22px;</strong> }</pre>
-<p class="sidenote">(When you've got more time, read <a href="http://kyleschaeffer.com/best-practices/css-font-size-em-vs-px-vs-pt-vs/" target="_blank">this article</a> for more info on font unit sizes.</p>
+<p class="sidenote">(When you've got more time, read <a href="http://kyleschaeffer.com/best-practices/css-font-size-em-vs-px-vs-pt-vs/" target="_blank">this article</a> for more info on font unit sizes.)</p>
     </article>
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>Changing the font weight</h2>
-      <p>In its simplest form, there are 2 weights:</p>
+      <p>In its simplest form, there are two possible values you can set as a font's weight:</p>
       <ul>
         <li style="font-weight: normal;">normal</li>
         <li style="font-weight: bold;">bold</li>
       </ul>
-      <p>By default, headings are already bolded. Let's remove the bold by applying the <em>normal</em> font weight on them.</p>
+      <p>By default, headings are already bolded. Let's remove the bold by applying the <em>normal</em> font weight to them.</p>
 <pre>h1 { font-family: Courier; font-size: 25px; <strong>font-weight: normal;</strong> }
 h2 { font-family: Courier; font-size: 22px; <strong>font-weight: normal;</strong> }</pre>
     </article>
@@ -995,7 +994,7 @@ h2 { font-family: Courier; font-size: 22px; <strong>font-weight: normal;</strong
       <h2>The "Box Model"</h2>
       <p>Most HTML elements on a webpage look like this to the browser:</p>
       <p class="centered"><img src="assets/box-model.gif" width="536" height="289" alt="box model" /></p>
-      <p>This is the same but visualized differently:</p>
+      <p>This is the same idea but visualized differently:</p>
       <p class="centered"><img src="assets/box-model.png" width="517" height="476" alt="box model" /></p>
     </article>
 
@@ -1200,9 +1199,9 @@ a {
   text-decoration: none;
   margin: 15px 10px 0 0;
 
-  border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
+  border-radius: 6px;
 }
 &lt;/style&gt;
 
@@ -1212,14 +1211,14 @@ a {
 </script>
 
       <br clear="all" />
-      <p class="sidenote"><strong>Advanced topic:</strong> To get it looking even more like a button, use the <code>border-radius</code> property.<br />
-      <span class="sidenote">(We won't get into browser pre-fixes today but do know that newer CSS features require you to re-state the property for each browser vendor.)</span></p>
+      <p class="sidenote"><strong>Advanced topic:</strong> To get it looking even more like a button, use the <code>border-radius</code> property to round the corners.<br />
+      <span class="sidenote">(We won't get into browser pre-fixes today, but note that newer CSS features like this one require you to re-state the property for each browser vendor. That's why the <code>border-radius</code> property is repeated three times, with <code>-moz-</code> and <code>-webkit-</code> before it.)</span></p>
     </article>
 
     <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>CSS interactions &amp; pseudo selectors</h2>
-      <p>CSS is also able to handle some basic UI interactions in our sites, such as allowing a mouse-over or "hover" state on various elements. This is frequently done with items such as links.</p>
+      <p>CSS is also able to handle some basic user interactions, such as allowing a mouse-over or "hover" state on various elements. This is frequently done with items such as links.</p>
       <p>As part of your selector, you need to use the <code>:hover</code> <span class="keyword">pseudo selector</span>.</p>
 
 <textarea class="coder-editor">
@@ -1232,9 +1231,9 @@ a {
   text-decoration: none;
   margin: 15px 10px 0 0;
 
-  border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
+  border-radius: 6px;
 }
 
 a:hover {
@@ -1255,9 +1254,9 @@ a {
   text-decoration: none;
   margin: 15px 10px 0 0;
 
-  border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
+  border-radius: 6px;
 }
 
 a:hover {
@@ -1331,17 +1330,17 @@ a:hover {
 &lt;/p&gt;
 </script>
       <br clear="all" />
-      <p class="sidenote">Now that's a lot of CSS! What if you change you mind and decide that the background colour should be blue now? Plus you can't apply pseudo selectors like <code>:hover</code> inline.</p>
+      <p class="sidenote">Now that's a lot of CSS! What if you change your mind and decide that the background colour should be blue now? Plus you can't apply pseudo selectors like <code>:hover</code> inline.</p>
     </article>    
 
    <!-- SLIDE: CSS -->
     <article class='slide slide-list'>
       <h2>CSS classes</h2>
-      <p>If you know that several elements are going to have similar styles, use CSS classes! Once you define one CSS class, you can apply it over and over again!</p>
+      <p>If you know that several elements are going to have similar styles, use CSS classes! Once you define one CSS class, you can apply it over and over again.</p>
       <ul>
-        <li>Use a <strong>period</strong> (<code>.</code>) to define CSS selectors that are classes.<br />
+        <li>In your CSS, use a <strong>period</strong> (<code>.</code>) to define CSS selectors that are classes.<br />
           e.g. <code>.nav_button</code></li>
-        <li>Then apply that class to any element using the <code>class</code> attribute.<br />
+        <li>Then in your HTML, apply that class to any element using the <code>class</code> attribute.<br />
           e.g. <code>class="nav_button"</code></li>
       </ul>
 
