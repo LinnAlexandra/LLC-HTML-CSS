@@ -94,7 +94,7 @@
       <h3 style="margin-top: 1em;">Morning</h3>
       <ul>
         <li>What is a website?</li>
-        <li>What do we use to make one?</li>
+        <li>What do we need to make one?</li>
         <li>Introducing HTML</li>
       </ul>
       <h3 style="margin-top: 1em;">Afternoon</h3>
@@ -160,7 +160,7 @@
       </p>
       <table width="100%">
       <tr>
-      <td width="33%" class="centered"><strong>HTML</strong> (Hypertext Markup Language) <br>
+      <td width="33%" class="centered"><strong>HTML</strong> (HyperText Markup Language) <br>
           is the markup language.</td>
       <td width="33%" class="centered"><strong>CSS</strong> (Cascading Style Sheets) <br>
           is the style sheet language.</td>
@@ -339,10 +339,10 @@
       <br />
       <p class="sidenote" style="margin-bottom: 0px;">For example:</p>
       <ul class="sidenote">
-        <li><code>&lt;title&gt;</code> is nested between opening and closing <code>&lt;head&gt;</code> tags so <code>&lt;head&gt;</code> is the parent node and <code>&lt;title&gt;</code> is the child node.</li>
+        <li><code>&lt;title&gt;</code> is nested between opening and closing <code>&lt;head&gt;</code> tags, so <code>&lt;head&gt;</code> is the parent node and <code>&lt;title&gt;</code> is the child node.</li>
         <li>Going further, <code>&lt;head&gt;</code> is also (at the same time) a child node of <code>&lt;html&gt;</code>.</li>
-        <li>While <code>&lt;html&gt;</code> is the always the &#8220;root&#8221; node and has <strong>no</strong> parent nodes.</li>
-        <li>Notice too that <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> are on the same level. They are both child nodes of <code>&lt;html&gt;</code>.</li>
+        <li><code>&lt;html&gt;</code> is the always the &#8220;root&#8221; node and has <strong>no</strong> parent nodes.</li>
+        <li>Notice that <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> are on the same level. They are both child nodes of <code>&lt;html&gt;</code>.</li>
       </ul>
 <pre style="width: 45%; float: left;">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -376,7 +376,7 @@
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>HTML in a web browser</h2>
-      <p>But remember: HTML tags are like the beams of a house &#8211; they denote structure, not content.)  </p>
+      <p>But remember: HTML tags are like the beams of a house &#8211; they denote structure, not content.</p>
       <p>So if I view <a href="exercises/barebones.html" target="_blank"><code>barebones.html</code></a> in a web browser, I don't see anything interesting yet...</p>
       <div class="reminders single-line"><p>If Chrome is not your default web browser, <strong>right-click</strong> and select the &#8220;<strong>open with...</strong>&#8221; option.</p></div>
     </article>
@@ -424,13 +424,13 @@
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2><code>&lt;head&gt;</code> vs <code>&lt;body&gt;</code></h2>
-      <p>Using a copy of <code>barebones.html</code>, I'm going to edit it to answer the below questions and prepare you for the following exercise you'll do on your own time.</p>
+      <p>I&#8217;m going to edit a copy of <code>barebones.html</code> to answer the questions below and to prepare you for the following exercise you&#8217;ll do on your own time.</p>
       <ul class="spacey_list">
         <li>
           What happens when I change the content in the <code>&lt;title&gt;</code> tag?
         </li>
         <li>
-          What's the difference between putting a tag in-between the <code>&lt;head&gt;</code> tag versus the <code>&lt;body&gt;</code> tag?
+          What&#8217;s the difference between putting a tag in-between the <code>&lt;head&gt;</code> tag versus the <code>&lt;body&gt;</code> tag?
         </li>
       </ul>
     </article>
@@ -457,17 +457,20 @@
       <div class="cheatsheet">
         <div>
           <h3>Hierarchy</h3>
+          <p>
           <code>&lt;hl&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> and <code>&lt;h6&gt;</code> &#8211; Heading levels 1 to 6<br />
           <code>&lt;p&gt;</code> &#8211; Paragraph<br />
+        </p>
         </div>
         <div>
           <h3>Text Formatting</h3>
-          <code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code> &#8211; Bold<br />
-          <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code> &#8211; Italics or emphasis<br />
+          <p><code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code> &#8211; Bold<br />
+          <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code> &#8211; Italics or emphasis<br /></p>
         </div>
         <div>
           <h3>Section Formatting</h3>
-          <code>&lt;blockquote&gt;</code> &#8211; A block quote for extended quotations<br />
+          <p>
+          <code>&lt;blockquote&gt;</code> &#8211; A block quote for extended quotations<br /></p>
         </div>
       </div>
       <br clear="all" />
@@ -486,7 +489,7 @@
     <article class='slide slide-list'>
       <h2>Empty Tags</h2>
       <p><span class="keyword">Empty tags</span> don&#8217;t format content &#8211; instead they are used to render or embed objects in our page.</p>
-      <p>These tags <strong>do not</strong> come in pairs of opening and closing tags like <code>h1</code> or <code>p</code> tags; instead, there is only an opening tag that &#8220;self-closes&#8221; with a back slash (<code>/</code>) immediately before the left angled bracket (<code>&gt;</code>).</p>
+      <p>These tags <strong>do not</strong> come in pairs of opening and closing tags like <code>h1</code> or <code>p</code> tags; instead, there is only an opening tag that &#8220;self-closes&#8221; with a back slash (<code>/</code>) immediately before the right-angled bracket (<code>&gt;</code>).</p>
       <p class="centered" style="font-size: 3em;"><code>&lt;tag /&gt;</code></p>
     </article>
 
@@ -543,7 +546,11 @@
       <ul>
         <li><code>src</code> is the <em>attribute</em></li>
         <li><code>http://goo.gl/7eSU5</code> is the <em>value</em> of that attribute<br />
+<<<<<<< HEAD
           <span class="sidenote">Values are typically surrounded by <em>double quotes</em> since occasionally values may contain spaces.</span></li>
+=======
+          <span class="sidenote">Values are typically surrounded by <em>double quotes</em> since values may contain spaces.</span></li>
+>>>>>>> Final revisions
       </ul>
       <p>With an <code>img</code> tag, the value of the <code>src</code> attribute tells the browser what the <em>source</em> of our image is.</p>
     </article>
@@ -659,7 +666,7 @@
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Working with images <span style="font-size: 22px;">(Group exercise &#8211; Part 4)</span></h2>
-      <p>It&#8217;s best practice to organize your images into their own folder to keep your website's file structure tidy.</p>
+      <p>It&#8217;s best practice to organize your images into their own folder to keep your website&#8217;s file structure tidy.</p>
       <p>Let&#8217;s <strong>move all of our images into the <code>images</code> folder</strong> of <code>2_WORKING_WITH_IMAGES</code>.</p>
       <p>Uh oh! Now our image will be broken in <code>index.html</code> since the image is no longer in the same folder. Let&#8217;s fix that...</p>
     </article>
@@ -688,12 +695,12 @@
     <article class='slide slide-list'>
       <h2>Links</h2>
       <p>The <code>&lt;a&gt;</code> tag &#8211; called an <em>anchor</em> tag &#8211; is used to create a link.</p>
-      <p><code>&lt;a&gt;</code> tags come in pairs and the content between the opening and closing tags is what is displayed as the link text (typically underlined).</p>
+      <p><code>&lt;a&gt;</code> tags come in pairs, and the content between the opening and closing tags is what is displayed as the link text (typically underlined).</p>
       <br />
       <pre class="prettyprint">Visit &lt;a&gt;Ladies Learning Code&lt;/a&gt;.</pre>
       <p>Visit <a>Ladies Learning Code</a>.</p>
       <br />
-      <p class="sidenote">But wait! This link doesn't take me anywhere!</p>
+      <p>But wait! This link doesn't take me anywhere!</p>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -736,7 +743,7 @@
       <ol>
         <li>What&#8217;s the <strong>very first line</strong> we need to type?</li>
         <li>What <strong>three</strong> HTML tags should every website have?</li>
-        <li>What HTML tag do I need to update the browser tab with a descriptive tab name? And where does it go?</li>
+        <li>What HTML tag do I need to change in order to update the browser tab with a descriptive tab name? And where does it go?</li>
       </ol>
       <p>Here is the start of your top navigation menu.<br /><span class="sidenote">(Don't worry, <code>&lt;nav&gt;</code> is nothing too special but we'll use it later in CSS.)</span></p>
 <pre>
@@ -754,14 +761,14 @@
       <p>On your own:</p>
       <ol class="spacey_list">
         <li>There will be two more pages: <code>about.html</code> and <code>contact.html</code>. Use the <code>&lt;a&gt;</code> tag with an <code>href</code> attribute to link all your pages together.</li>
-        <li>Based on <code>index.html</code>, create those 2 new files for About and Contact  in the same <code>website</code> folder as <code>index.html</code>. Name these files <code>about.html</code> and <code>contact.html</code>.</li> 
+        <li>Create two new files for About and Contact by duplicating <code>index.html</code> within the <code>website</code> folder. Name these files <code>about.html</code> and <code>contact.html</code>.</li> 
         <li>Make sure that all your webpages have a descriptive and unique <code>&lt;title&gt;</code>.</li>
         <li>Confirm that you can click between all the pages using the navigation links. Fix them if needed.</li>
         <li>Update <code>about.html</code> with a picture and bio.<br />
           <span class="sidenote">(You can even try adding a YouTube video based on the notes on the next slide.)</span></li>
         <li>Update <code>contact.html</code> with contact info.<br />
          <span class="sidenote">(You can even try adding a Google Map.)</span></li>
-        <li><strong>Don't</strong> update <code>index.html</code> any more!<br/>
+        <li><strong>Don&#8217;t</strong> update <code>index.html</code> any more!<br/>
           <span class="sidenote">We'll get to that <strong>after</strong> lunch.</span></li>
       </ol>
     </article> 
@@ -781,7 +788,7 @@
       <h2>HTML reference</h2>
       <ul class="spacey_list">
         <li>Download a <a href="http://woorkup.com/2009/12/16/html5-visual-cheat-sheet-reloaded/" target="_blank">cheatsheet of HTML tags</a>. (There is a copy in the <code>cheatsheets</code> folder.)</li>
-        <li>Try looking up individual tags using the HTML sections of <a href="https://developer.mozilla.org/en-US/docs/HTML/Element" target="_blank">Mozilla's Developer Network</a> or the <a href="http://www.w3.org/community/webed/wiki/HTML/Elements" target="_blank">W3C</a> for more details about attributes and tag usage.</li>
+        <li>Try looking up individual tags using the HTML sections of <a href="https://developer.mozilla.org/en-US/docs/HTML/Element" target="_blank">Mozilla&#8217;s Developer Network</a> or the <a href="http://www.w3.org/community/webed/wiki/HTML/Elements" target="_blank">W3C</a> for more details on tag usage and attributes.</li>
         <li>For further exploration, use the <a href="http://hackasaurus.org/en-US/goggles/install/" target="_blank">Hackasaurus X-Ray Goggles</a> to look at any webpage.</li>
         <li>And don&#8217;t forget the &#8220;view source&#8221; option of your web browser!</li>
       </ul>
